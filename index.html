@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wizard Mockup</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wet-boew/wet-boew@5.1.0/dist/css/wet-boew.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/wet-boew/wet-boew@5.1.0/dist/js/wet-boew.min.js"></script>
+</head>
+<body>
+
+<h1>Simple Wizard Mockup</h1>
+
+<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio"}'>
+  <p>Please choose a category:</p>
+  <ul>
+    <li data-wb-fieldflow='{"action":"append","source":"#step2a","srctype":"wb-fieldflow"}'>Fruits</li>
+    <li data-wb-fieldflow='{"action":"append","source":"#step2b","srctype":"wb-fieldflow"}'>Vegetables</li>
+  </ul>
+</div>
+
+<div id="step2a" class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio"}' style="display:none;">
+  <p>Pick a fruit:</p>
+  <ul>
+    <li data-wb-fieldflow='{"action":"redir","url":"apple.html"}'>Apple</li>
+    <li data-wb-fieldflow='{"action":"redir","url":"banana.html"}'>Banana</li>
+  </ul>
+</div>
+
+<div id="step2b" class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio"}' style="display:none;">
+  <p>Pick a vegetable:</p>
+  <ul>
+    <li data-wb-fieldflow='{"action":"redir","url":"carrot.html"}'>Carrot</li>
+    <li data-wb-fieldflow='{"action":"redir","url":"broccoli.html"}'>Broccoli</li>
+  </ul>
+</div>
+
+</body>
+</html>
